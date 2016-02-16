@@ -1,0 +1,319 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Kelsey Gross</title>
+  <meta name="description" content="Kelsey Gross Personal Website">
+  <meta name="author" content="Kelsey Gross">
+
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+	<div class="navigator" id="header-container" style="height: auto; margin-top: -32px;"> 
+		<div class="container wide-container">
+		<div class="sixteen columns header">
+			<div class="logo"> </div>
+			<div class="nav">
+				<ul class="s-nav">
+					<li>
+						<a class="s-nav-item selected" data-bind="text:components.slideSettings.name, css: {selected: isHighlighted()}, attr: { href: hashHref() }" href="#welcome">Welcome</a>
+					</li>
+					<li>
+						<a class="s-nav-item selected" data-bind="text:components.slideSettings.name, css: {selected: isHighlighted()}, attr: { href: hashHref() }" href="#about_me">About Me</a>
+					</li>
+					<li>
+						<a class="s-nav-item selected" data-bind="text:components.slideSettings.name, css: {selected: isHighlighted()}, attr: { href: hashHref() }" href="#my_projects">My Projects</a>
+					</li>
+					<li>
+						<a class="s-nav-item selected" data-bind="text:components.slideSettings.name, css: {selected: isHighlighted()}, attr: { href: hashHref() }" href="#my_work">My Work</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="header-spacer" style="height: 98px;"></div>
+		</div>
+	</div>
+	<div>
+		<ul class="slides" data-bind="stopBinding: true">
+			<li class="slide">
+				<a class="section-anchor" data-scroll-name="#2" style="top: -64px;"></a>
+				<a class="section-name-anchor" data-section-name="Welcome"></a><a name="welcome"></a>
+				<div class="wide image resize strikingly-light-text lazy-background hasImage" data-bind="'className': background.getSelectedClassName(), 'style': background.selectedStyleLazy(), 'css':{'lazy':true, 'lazy-background':true, 'video-bg': background.video.videoBackgroundEnabled, hasImage:background.hasContent()}, 'attr': {'data-background': background.assetUrl()}"
+				 data-background="images/bryce_pano1.jpg" style="padding-top: 46px; padding-bottom: 46px; background-image: url(&quot;images/bryce_pano1.jpg&quot;); background-size: auto; background-position: 49% 50%; background-repeat: no-repeat;"> 
+					<div class="video-bg-wrap" data-bind="attr:{'data-video-html': background.videoHtml}, visible: background.video.videoBackgroundEnabled" data-video-html="" style="display: none;">
+					</div> 
+					<div class="container"> 
+						<div class="sixteen columns"> 
+							<div class="spacer" style="height:10px">&nbsp;</div> 
+								<h3 class="subtitle"> 
+									<span class="line" data-bind="visible:text1.value().length > 0"></span> 
+									<div class="ib">
+										<div data-component="text" data-name="text1" data-text-type="body" class="text-component">
+											<div class="content content2" data-bind="visible: !(text1.isState('editor') || !text1.hasContent()), htmlValue: text1.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+												<div></div>
+											</div>
+										</div>
+									</div> 
+									<span class="line" data-bind="visible:text1.value().length > 0"></span> 
+								</h3> 
+								<h1 class="title big">
+									<div data-component="text" data-name="text2" data-text-type="title" class="text-component">
+										<div class="content content2" data-bind="visible: !(text2.isState('editor') || !text2.hasContent()), htmlValue: text2.value, style: window.edit_page.data.fontStyle('titleFont') ">
+											<div>Kelsey Gross</div>
+										</div>
+									</div>
+								</h1> 
+								<br> 
+								<br> 
+							</div> 
+						</div> 
+					</div>
+				</li>
+				<li class="slide" tabindex="0">
+					<a class="section-anchor" data-scroll-name="#2" style="top: -64px;"></a>
+					<a class="section-name-anchor" data-section-name="about_me"></a>
+					<a name="about_me"></a>
+					<div class="wide white-next">
+						<div class="container">
+							<div class="center">
+								<div class="no-float mb30 repeatable" data-bind="mouseenter: mouseeneterHandler, mouseleave: mouseleaveHandler">
+									<div class="one column squeeze"></div>
+									<div class="five columns center">
+										<div class="imagecover" data-bind="visible: components.image.hasContentOrIsEditMode">
+											<div data-component="image" data-image-size="280x280#" data-name="components.image" data-use-url="true">
+												<div class="content content2" data-bind="fadeVisibleAndHide: !components.image.isState('editor')" style="visibility: visible; opacity: 1;"><a class="image-link" data-bind="if: components.image.hasLink() || !edit_page.isShowPage, attr: { href: components.image.link(), target: components.image.target() }" href="javascript:void(0);" target="_self"></a><span class="image-link" data-bind="ifnot: components.image.hasLink() || !edit_page.isShowPage"><img data-bind="attr: { 'class': 'lazy lazy-img', 'data-original': components.image.assetUrl, alt: components.image.caption, title: components.image.caption }" src="images/kjg_parasailing.jpg" alt="" class="lazy-img" data-original="images/kjg_parasailing.jpg" title="" style="position: relative;"> </span>  
+												</div>
+											</div> 
+										</div>
+										<h2 class="subtitle text-compontent" data-component="text" data-name="components.title" data-use-font="true">
+											<div class="content content2" data-bind="visible: !(components.name.isState('editor') || !components.name.hasContent()), htmlValue: components.name.value, style: window.edit_page.data.fontStyle('headingFont') ">
+												<div>Software Engineer</div>
+												<div>Data Analyst</div>
+											</div>
+										</h2>
+										<div class="text3 text-component" data-component="text" data-name="components.title" data-use-font="true">
+											<div class="content content2" data-bind="visible: !(components.title.isState('editor') || !components.title.hasContent()), htmlValue: components.title.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+												<div>San Francisco, CA</div>
+											</div>
+										</div>
+										<div> When not in San Francisco, you can find me scurrying up mountains, reading in a coffee shop, and/or hunting down delicious ice cream cones all around the world. I'm a data analyst by day, code things on the side, and spend the rest of my time outside.
+										</div>
+									</div>
+									<div class="one column squeeze"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="slide selected" tabindex="0"> <a class="section-anchor" data-scroll-name="#3" style="top: -64px;"></a> <a class="section-name-anchor" data-section-name="My Projects"></a> 
+					<a name="my_projects"></a>
+					<div class="wide"> 
+						<div class="container"> 
+							<div class="row big"> 
+								<div class="sixteen columns"> 
+									<h2 class="title center" data-bind="visible:title.hasContentOrIsEditMode()"> 
+										<div class="ib relative"> 
+											<span class="line-abs" data-bind="visible:title.hasContent()"></span> 
+											<div data-component="text" data-name="title" data-text-type="heading" class="text-component">
+												<div class="content content2" data-bind="visible: !(title.isState('editor') || !title.hasContent()), htmlValue: title.value, style: window.edit_page.data.fontStyle('headingFont') ">
+													<div>My Projects</div>
+												</div>
+											</div> 
+											<span class="line-abs right" data-bind="visible:title.hasContent()"></span> 
+										</div> 
+										<span class="line fixed-show" data-bind="visible:title.hasContent()"></span> 
+									</h2> 
+									<h3 class="title2 center">
+										<div data-component="text" data-name="subtitle" data-text-type="body" class="text-component">
+											<div class="content content2" data-bind="visible: !(subtitle.isState('editor') || !subtitle.hasContent()), htmlValue: subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+												<div> My Side Projects.</div>
+											</div>
+										</div>
+									</h3> 
+								</div> 
+							</div> 
+							<div class="clients content repeatable-component ko_container ui-sortable" data-bind="sortableRepeatable: { template: 'client_box', data: clients.list }">
+								<div class="row big repeatable" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler, visible: parent.hasContentOrIsEditMode()"> 
+									<div class="two columns offset-one center five" data-bind="css: {'five':components.image.hasContent(), 'eight offset-four': !(components.title.hasContentOrIsEditMode() || components.subtitle.hasContentOrIsEditMode() || components.location.hasContentOrIsEditMode() || components.description.hasContentOrIsEditMode())} "> 
+										<div data-component="image" data-name="components.image" data-use-url="true">
+											<div class="content content2" data-bind="fadeVisibleAndHide: !components.image.isState('editor')" style="visibility: visible; opacity: 1;">  <a class="image-link" data-bind="if: components.image.hasLink() || !edit_page.isShowPage, attr: { href: components.image.link(), target: components.image.target() }" href="javascript:void(0);" target="_self"></a> <span class="image-link" data-bind="ifnot: components.image.hasLink() || !edit_page.isShowPage"> <img data-bind="attr: { 'class': 'lazy lazy-img', 'data-original': components.image.assetUrl, alt: components.image.caption, title: components.image.caption }" src="images/soccer_epic2.jpg" alt="" class="lazy-img" data-original="images/soccer_epic2.jpg" title="" style="position: relative;"> </span>  
+											</div>
+										</div> 
+									</div> 
+									<div class="four columns nine" data-bind="css: {'nine':components.title.hasContent() || components.subtitle.hasContent() || components.location.hasContent() || components.description.hasContent() , 'ten':!components.image.hasContent()} "> 
+										<div class="half-offset-left"> 
+											<div class="div" data-bind="visible: components.title.hasContentOrIsEditMode() "> 
+												<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
+													<div class="content content2" data-bind="visible: !(components.title.isState('editor') || !components.title.hasContent()), htmlValue: components.title.value, style: window.edit_page.data.fontStyle('headingFont') ">
+														<div><a href="http://www.rosterblitz.com">Rosterblitz.com</a></div>
+													</div>
+												</h2> 
+											</div> 
+											<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() "> 
+												<div class="text2 text-component" data-component="text" data-name="components.subtitle" data-use-font="true">
+													<div class="content content2" data-bind="visible: !(components.subtitle.isState('editor') || !components.subtitle.hasContent()), htmlValue: components.subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+														<div>Cofounder &amp; Backend Engineer</div>
+													</div>
+												</div> 
+											</div> 
+											<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
+												<div class="content content2" data-bind="visible: !(components.description.isState('editor') || !components.description.hasContent()), htmlValue: components.description.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+													<div><span>I led backend development for our team of three engineers. In doing so, I elected to utilize a NoSQL database (MongoDB) and Redis caching to store information from several different API calls made to a 3rd party sports data site. Throughout development, I honed my understanding of the juxtaposition of relational and non-relational databases, and the advantages of each. I also learned NodeJS and focused on providing clean data in minimal time and memory for our frontend. </span>
+													</div>
+													<div>&nbsp;</div>
+												</div>
+											</div> 
+										</div> 
+									</div> 
+								</div>
+								<div class="row big repeatable" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler, visible: parent.hasContentOrIsEditMode()"> 
+									<div class="two columns offset-one center five" data-bind="css: {'five':components.image.hasContent(), 'eight offset-four': !(components.title.hasContentOrIsEditMode() || components.subtitle.hasContentOrIsEditMode() || components.location.hasContentOrIsEditMode() || components.description.hasContentOrIsEditMode())} "> 
+										<div data-component="image" data-name="components.image" data-use-url="true">
+											<div class="content content2" data-bind="fadeVisibleAndHide: !components.image.isState('editor')" style="visibility: visible; opacity: 1;">  <a class="image-link" data-bind="if: components.image.hasLink() || !edit_page.isShowPage, attr: { href: components.image.link(), target: components.image.target() }" href="javascript:void(0);" target="_self"></a> <span class="image-link" data-bind="ifnot: components.image.hasLink() || !edit_page.isShowPage"> <img data-bind="attr: { 'class': 'lazy lazy-img', 'data-original': components.image.assetUrl, alt: components.image.caption, title: components.image.caption }" src="images/kelsey_ben_zion.jpg" alt="" class="lazy-img" data-original="images/kelsey_ben_zion.jpg" title="" style="position: relative;"> </span>  
+											</div>
+										</div> 
+									</div> 
+									<div class="four columns nine" data-bind="css: {'nine':components.title.hasContent() || components.subtitle.hasContent() || components.location.hasContent() || components.description.hasContent() , 'ten':!components.image.hasContent()} "> 
+										<div class="half-offset-left"> 
+											<div class="div" data-bind="visible: components.title.hasContentOrIsEditMode() "> 
+												<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
+													<div class="content content2" data-bind="visible: !(components.title.isState('editor') || !components.title.hasContent()), htmlValue: components.title.value, style: window.edit_page.data.fontStyle('headingFont') ">
+														<div>Advent of Code</div>
+													</div>
+												</h2> 
+											</div> 
+											<div class="div" data-bind="visible: components.location.hasContentOrIsEditMode() "> 
+												<div class="text3 text-component" data-component="text" data-name="components.location" data-use-font="true">
+													<div class="content content2" data-bind="visible: !(components.location.isState('editor') || !components.location.hasContent()), htmlValue: components.location.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+														<div>25 Programming Puzzles.</div>
+													</div>
+												</div> 
+											</div> 
+											<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
+												<div class="content content2" data-bind="visible: !(components.description.isState('editor') || !components.description.hasContent()), htmlValue: components.description.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+													<div><a href="http://www.github.com/kjgross/advent_of_code">Advent of Code</a> is a series of 25 programming projects. I completed these in Python.
+													</div>
+													<div>&nbsp;</div>
+												</div>
+											</div> 
+										</div> 
+									</div>  
+								</div>
+							</div> 
+						</div> 
+					</div>  
+		</li>
+		<li class="slide selected" tabindex="0"> <a class="section-anchor" data-scroll-name="#3" style="top: -64px;"></a> <a class="section-name-anchor" data-section-name="My Work"></a> 
+					<a name="my_work"></a>
+					<div class="wide"> 
+						<div class="container"> 
+							<div class="row big"> 
+								<div class="sixteen columns"> 
+									<h2 class="title center" data-bind="visible:title.hasContentOrIsEditMode()"> 
+										<div class="ib relative"> 
+											<span class="line-abs" data-bind="visible:title.hasContent()"></span> 
+											<div data-component="text" data-name="title" data-text-type="heading" class="text-component">
+												<div class="content content2" data-bind="visible: !(title.isState('editor') || !title.hasContent()), htmlValue: title.value, style: window.edit_page.data.fontStyle('headingFont') ">
+													<div>My Work</div>
+												</div>
+											</div> 
+											<span class="line-abs right" data-bind="visible:title.hasContent()"></span> 
+										</div> 
+										<span class="line fixed-show" data-bind="visible:title.hasContent()"></span> 
+									</h2> 
+									<h3 class="title2 center">
+										<div data-component="text" data-name="subtitle" data-text-type="body" class="text-component">
+											<div class="content content2" data-bind="visible: !(subtitle.isState('editor') || !subtitle.hasContent()), htmlValue: subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+												<div> I'm a data analyst looking to switch to fullstack software engineering.</div>
+											</div>
+										</div>
+									</h3> 
+								</div> 
+							</div> 
+							<div class="clients content repeatable-component ko_container ui-sortable" data-bind="sortableRepeatable: { template: 'client_box', data: clients.list }">
+								<div class="row big repeatable" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler, visible: parent.hasContentOrIsEditMode()"> 
+									<div class="two columns offset-one center five" data-bind="css: {'five':components.image.hasContent(), 'eight offset-four': !(components.title.hasContentOrIsEditMode() || components.subtitle.hasContentOrIsEditMode() || components.location.hasContentOrIsEditMode() || components.description.hasContentOrIsEditMode())} "> 
+										<div data-component="image" data-name="components.image" data-use-url="true">
+											<div class="content content2" data-bind="fadeVisibleAndHide: !components.image.isState('editor')" style="visibility: visible; opacity: 1;">  <a class="image-link" data-bind="if: components.image.hasLink() || !edit_page.isShowPage, attr: { href: components.image.link(), target: components.image.target() }" href="javascript:void(0);" target="_self"></a> <span class="image-link" data-bind="ifnot: components.image.hasLink() || !edit_page.isShowPage"> <img data-bind="attr: { 'class': 'lazy lazy-img', 'data-original': components.image.assetUrl, alt: components.image.caption, title: components.image.caption }" src="images/edmodo_logo_center.jpg" alt="" class="lazy-img" data-original="images/edmodo_logo_center.jpg" title="" style="position: relative;"> </span>  
+											</div>
+										</div> 
+									</div> 
+									<div class="four columns nine" data-bind="css: {'nine':components.title.hasContent() || components.subtitle.hasContent() || components.location.hasContent() || components.description.hasContent() , 'ten':!components.image.hasContent()} "> 
+										<div class="half-offset-left"> 
+											<div class="div" data-bind="visible: components.title.hasContentOrIsEditMode() "> 
+												<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
+													<div class="content content2" data-bind="visible: !(components.title.isState('editor') || !components.title.hasContent()), htmlValue: components.title.value, style: window.edit_page.data.fontStyle('headingFont') ">
+														<div>Edmodo</div>
+													</div>
+												</h2> 
+											</div> 
+											<div class="div" data-bind="visible: components.location.hasContentOrIsEditMode() "> 
+												<div class="text3 text-component" data-component="text" data-name="components.location" data-use-font="true">
+													<div class="content content2" data-bind="visible: !(components.location.isState('editor') || !components.location.hasContent()), htmlValue: components.location.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+														<div>Data Analyst</div>
+													</div>
+												</div> 
+											</div> 
+											<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
+												<div class="content content2" data-bind="visible: !(components.description.isState('editor') || !components.description.hasContent()), htmlValue: components.description.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+													<div><span>Ran Product Analytics for Edmodo, Inc. </span>
+													</div>
+													<div>&nbsp;</div>
+												</div>
+											</div> 
+										</div> 
+									</div> 
+								</div>
+								<div class="row big repeatable" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler, visible: parent.hasContentOrIsEditMode()"> 
+									<div class="two columns offset-one center five" data-bind="css: {'five':components.image.hasContent(), 'eight offset-four': !(components.title.hasContentOrIsEditMode() || components.subtitle.hasContentOrIsEditMode() || components.location.hasContentOrIsEditMode() || components.description.hasContentOrIsEditMode())} "> 
+										<div data-component="image" data-name="components.image" data-use-url="true">
+											<div class="content content2" data-bind="fadeVisibleAndHide: !components.image.isState('editor')" style="visibility: visible; opacity: 1;">  <a class="image-link" data-bind="if: components.image.hasLink() || !edit_page.isShowPage, attr: { href: components.image.link(), target: components.image.target() }" href="javascript:void(0);" target="_self"></a> <span class="image-link" data-bind="ifnot: components.image.hasLink() || !edit_page.isShowPage"> <img data-bind="attr: { 'class': 'lazy lazy-img', 'data-original': components.image.assetUrl, alt: components.image.caption, title: components.image.caption }" src="images/edmodo_logo_center.jpg" alt="" class="lazy-img" data-original="images/edmodo_logo_center.jpg" title="" style="position: relative;"> </span>  
+											</div>
+										</div> 
+									</div> 
+									<div class="four columns nine" data-bind="css: {'nine':components.title.hasContent() || components.subtitle.hasContent() || components.location.hasContent() || components.description.hasContent() , 'ten':!components.image.hasContent()} "> 
+										<div class="half-offset-left"> 
+											<div class="div" data-bind="visible: components.title.hasContentOrIsEditMode() "> 
+												<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
+													<div class="content content2" data-bind="visible: !(components.title.isState('editor') || !components.title.hasContent()), htmlValue: components.title.value, style: window.edit_page.data.fontStyle('headingFont') ">
+														<div>Edmodo</div>
+													</div>
+												</h2> 
+											</div> 
+											<div class="div" data-bind="visible: components.location.hasContentOrIsEditMode() "> 
+												<div class="text3 text-component" data-component="text" data-name="components.location" data-use-font="true">
+													<div class="content content2" data-bind="visible: !(components.location.isState('editor') || !components.location.hasContent()), htmlValue: components.location.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+														<div>Institutions Support Specialist</div>
+													</div>
+												</div> 
+											</div> 
+											<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
+												<div class="content content2" data-bind="visible: !(components.description.isState('editor') || !components.description.hasContent()), htmlValue: components.description.value, style: window.edit_page.data.fontStyle('bodyFont') ">
+													<div>Built out enterprise support system.
+													</div>
+													<div>&nbsp;</div>
+												</div>
+											</div> 
+										</div> 
+									</div> 
+								</div>
+							</div> 
+						</div> 
+					</div>  
+			</li>
+		</ul>
+	</div>
+	<div id="footer">
+		<ul>
+			<li><a href="mailto:kelseyjgross@gmail.com"> <img src="images/email_logo.jpeg"> </a></li>
+			<li><a href="http://www.github.com/kjgross"> <img src="images/github_logo.png"> </a></li>
+			<li><a href="http://www.linkedin/in/kjgross"> <img src="images/linkedin_logo.jpeg"> </a></li>
+			<li><a href="https://www.instagram.com/kelsey.gross/"> <img src="images/insta_logo.png"> </a></li>
+		</ul>
+	<div>&nbsp;</div>
+	</div>
+</body>
+</html>
