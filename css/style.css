@@ -8,6 +8,11 @@ ul, menu, dir {
     -webkit-padding-start: 40px;
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 div {
     display: block;
 }
@@ -29,6 +34,11 @@ li {
 element.style {
     visibility: visible;
     opacity: 1;
+}
+
+.slides {
+    margin: 0px;
+    padding: 0px;
 }
 
 ul.slides li.slide {
