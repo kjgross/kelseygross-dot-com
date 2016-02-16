@@ -225,12 +225,12 @@ img {
     border: 0;
 }
 
-/*component img, .wide .container .imagecover .content img {
+component img, .wide .container .imagecover .content img {
     width: 100%;
     -webkit-border-radius: 1000px;
     -moz-border-radius: 1000px;
     border-radius: 1000px;
-}*/
+}
 
 .wide .container .imagecover .image-component, .wide .container .imagecover .content {
     width: 100%;
