@@ -11,6 +11,7 @@ ul, menu, dir {
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
 }
 
 div {
@@ -57,6 +58,12 @@ ul.slides li.slide {
     border-bottom: 1px solid #bbb\9;
 }
 
+*, *:before, *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+     }
+
 
 #header-container .header .nav ul {
     position: relative;
@@ -87,6 +94,7 @@ ul.slides li.slide {
 #header-container .header .nav ul a:hover { 
     background-color: gray;
 }
+
 
 .navigator:before,
 .navigator:after {
