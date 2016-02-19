@@ -31,7 +31,6 @@ li {
     word-wrap: break-word;
 }
 
-
 element.style {
     visibility: visible;
     opacity: 1;
@@ -147,7 +146,7 @@ h3 {
 }
 
 .wide .container {
-    padding-top: 90px;
+    padding-top: 40px;
     padding-bottom: 70px;
     position: relative;
     margin: 0 auto;
@@ -186,6 +185,12 @@ h3 {
     text-shadow: 0 1px 0 rgba(255,255,255,0.75);
 }
 
+.wide .container #about_me_text {
+    width: 286px;
+    text-align: left;
+    padding-top: 5px
+}
+
 .wide .container .no-float {
     display: inline-block;
     zoom: 1;
@@ -206,9 +211,8 @@ h3 {
 }
 
 .wide {
-    background: #fff;
-    font-family: arial,sans-serif;
-    font-size: 15px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-weight: 300;
 }
 
 .relative {
@@ -225,12 +229,19 @@ img {
     border: 0;
 }
 
-component img, .wide .container .imagecover .content img {
-    width: 100%;
-    -webkit-border-radius: 1000px;
-    -moz-border-radius: 1000px;
-    border-radius: 1000px;
+a.section-name-anchor, a.section-anchor {
+    padding-top: 340px;
+    margin-top: -340px;
+     display: inline-block;
 }
+
+.anchor{
+  /*display: block;*/
+  height: 115px;
+  margin-top: -115px;
+  /*visibility: hidden;*/
+}
+
 
 .wide .container .imagecover .image-component, .wide .container .imagecover .content {
     width: 100%;
@@ -239,6 +250,12 @@ component img, .wide .container .imagecover .content img {
 .wide .container .title span.line-abs.right {
     right: auto;
     left: 100%;
+}
+
+.job_title {
+    color: #5e9516;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff;
 }
 
 .wide .container .title span.line-abs {
@@ -329,28 +346,28 @@ component img, .wide .container .imagecover .content img {
     padding-bottom:15px; 
 }
 
-#footer ul {
-    display: block;
-    text-align:center;
-}
 
 #footer ul {
+    display: block;
     position: relative;
-    zoom: 1;
     text-align: center;
     width: 100%;
 }
 
 #footer li img{
-    max-width: 50px;
+    max-width: 30px;
+    padding: 4px;
 }
 
 #footer li {
     display: inline;
-    float: left;
+    float: center;
     width: 5%;
 }
 
+#footer li a {
+    text-decoration: none;
+}
 
 .left {
     width: 25%;
@@ -369,5 +386,11 @@ component img, .wide .container .imagecover .content img {
 
 .right a:link {
     text-decoration: none;
+}
+
+.left img{
+    padding-left: 25%;
+    max-width: 150px; 
+    max-height: 150px;
 }
 
