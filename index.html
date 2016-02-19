@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<div class="navigator" id="header-container" style="height: auto; margin-top: -32px;"> 
+	<!-- <div class="navigator" id="header-container" style="height: auto; margin-top: -32px;"> 
 		<div class="container wide-container">
 		<div class="sixteen columns header">
 			<div class="logo"> </div>
@@ -40,16 +40,14 @@
 		</div>
 		<div id="header-spacer" style="height: 98px;"></div>
 		</div>
-	</div>
+	</div> -->
 	<div>
 		<ul class="slides" data-bind="stopBinding: true">
 			<li class="slide">
-				<a class="section-anchor" data-scroll-name="#2" style="top: -64px;"></a>
+				<a class="section-anchor" data-scroll-name="#2"></a>
 				<a class="section-name-anchor" data-section-name="Welcome"></a><a name="welcome"></a>
 				<div class="wide image resize strikingly-light-text lazy-background hasImage" data-bind="'className': background.getSelectedClassName(), 'style': background.selectedStyleLazy(), 'css':{'lazy':true, 'lazy-background':true, 'video-bg': background.video.videoBackgroundEnabled, hasImage:background.hasContent()}, 'attr': {'data-background': background.assetUrl()}"
-				 data-background="images/bryce_pano1.jpg" style="padding-top: 46px; padding-bottom: 46px; background-image: url(&quot;images/bryce_pano1.jpg&quot;); background-size: auto; background-position: 49% 50%; background-repeat: no-repeat;"> 
-					<div class="video-bg-wrap" data-bind="attr:{'data-video-html': background.videoHtml}, visible: background.video.videoBackgroundEnabled" data-video-html="" style="display: none;">
-					</div> 
+				 data-background="images/bryce_pano1.jpg" style="background-image: url(&quot;images/bryce_pano1.jpg&quot;); background-size: auto; background-position: 49% 50%; background-repeat: no-repeat; margin-top: -32px;"> 
 					<div class="container"> 
 						<div class="sixteen columns"> 
 							<div class="spacer" style="height:10px">&nbsp;</div> 
@@ -114,12 +112,20 @@
 						</div>
 					</div>
 				</li>
+				<li>
+					<div class="footer">
+						<ul>
+							<li><a href="mailto:kelseyjgross@gmail.com"> <img src="images/email_logo.png"> </a></li>
+							<li><a href="http://www.github.com/kjgross"> <img src="images/github_logo.jpg"> </a></li>
+							<li><a href="https://www.linkedin.com/in/kjgross"> <img src="images/linkedin_logo.png"> </a></li>
+							<li><a href="https://www.instagram.com/kelsey.gross/"> <img src="images/insta_logo.png"> </a></li>
+						</ul>
+					</div>
+				</li>
 				<li class="slide selected" tabindex="0"> 
 					<span class="anchor" id="section1"></span>
 					<a class="section-name-anchor"></a> 
 					<a name="my_projects"></a>
-					<div>&nbsp;</div>
-					<div>&nbsp;</div>
 					<div class="wide"> 
 						<div class="container"> 
 							<div class="row big"> 
@@ -195,8 +201,6 @@
 		</li>
 		<li class="slide selected" tabindex="0"> <a class="section-anchor" data-scroll-name="#3" style="top: -64px;"></a> <a class="section-name-anchor" data-section-name="My Work"></a> 
 					<a name="my_work"></a>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
 				<div class="wide"> 
 					<div class="container"> 
 						<div class="row big"> 
@@ -283,7 +287,7 @@
 		</li>
 		</ul>
 	</div>
-	<div id="footer">
+	<div class="footer">
 		<ul>
 			<li><a href="mailto:kelseyjgross@gmail.com"> <img src="images/email_logo.png"> </a></li>
 			<li><a href="http://www.github.com/kjgross"> <img src="images/github_logo.jpg"> </a></li>

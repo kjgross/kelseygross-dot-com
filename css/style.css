@@ -1,4 +1,4 @@
-ul, menu, dir {
+/*ul, menu, dir {
     display: block;
     list-style-type: disc;
     -webkit-margin-before: 1em;
@@ -6,7 +6,7 @@ ul, menu, dir {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
-}
+} */
 
 body {
     margin: 0px;
@@ -208,6 +208,7 @@ h3 {
 
 .wide .container img {
     max-width: 100%;
+    clear: both;
 }
 
 .wide {
@@ -254,8 +255,6 @@ a.section-name-anchor, a.section-anchor {
 
 .job_title {
     color: #5e9516;
-    font-weight: bold;
-    text-shadow: 0 1px 0 #fff;
 }
 
 .wide .container .title span.line-abs {
@@ -338,7 +337,7 @@ a.section-name-anchor, a.section-anchor {
     text-align: center;
 }
 
-#footer {
+.footer {
     color:black;
     clear:both;
     text-align:center;
@@ -347,25 +346,26 @@ a.section-name-anchor, a.section-anchor {
 }
 
 
-#footer ul {
+.footer ul {
     display: block;
     position: relative;
     text-align: center;
     width: 100%;
+    margin-left: -20px;
 }
 
-#footer li img{
-    max-width: 30px;
+.footer li img{
+    max-width: 45px;
     padding: 4px;
 }
 
-#footer li {
+.footer li {
     display: inline;
     float: center;
     width: 5%;
 }
 
-#footer li a {
+.footer li a {
     text-decoration: none;
 }
 
